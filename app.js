@@ -68,6 +68,11 @@ class Weather {
     }
   }
 
+  /**
+   * Update session storage with fresh API call 
+   * 
+   * @param {number} timeDiff - Calculated time between now and time data was stored
+   */
   updateData(timeDiff) {
     if (!timeDiff && timeDiff < 6) return
 
